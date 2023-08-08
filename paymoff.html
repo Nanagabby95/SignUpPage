@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500&family=Montserrat:wght@400;600;700;800&family=Poppins:wght@300;400;500&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Paymoff</title>  
+</head>
+<style>
+  .trans-btn{
+    margin: 0 !important;
+  }
+  .rep-btn, .trans-btn{
+    margin: 0;
+    padding: 8px 30px !important;
+  }
+  .schedule-section{
+    position: relative;
+  }
+ 
+  .image-caption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: (-50%, -50%);
+  }
+ @media(max-width:768px) {
+  .image-caption h4{
+    font-size: 12px !important;
+  }
+  .schedule-section img{
+    width: 100%;
+  }
+  .image-caption{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    translate: (-40%, -50%);
+  }
+  .image-caption button{
+    padding: 4px 17px !important;
+    margin-bottom: 5px !important;
+  }
+  .gradient-btn {
+      
+      width: 100% !important;
+      
+    }
+ }
+</style>
+<body>
+    <div class="nav-wrapper">
+        <nav class="navbar">
+          <div class="logo-wrapper">
+            <img src="/images/Vector.png" alt="logo" class="p-2">
+          </div>
+         
+          <div class="navmenu-wrapper">
+            <ul class="navmenu list-unstyled text-center">
+                  <li class="navitem home">
+                    <a href="http://home.ushmoney.net/" class="navlink text-white text-decoration-none">Home</a>
+                  </li>
+                  <li class="navitem list-group-item product" data-bs-toggle="modal" data-bs-target="#overlayModal">
+                    Products <span><img src="/images/expand_more.png" alt="" class="products-overlay"></span>
+                  </li>
+                  <li class="navitem pricing">
+                    <a href="#" class="navlink text-white text-decoration-none">Pricing</a>
+                  </li>
+                  <li class="navitem">
+                    <a href="index.html" class="navlink text-primary text-decoration-none">Login</a>
+                  </li>
+                  <li class="navitem">
+                    <a href="index.html" class="navlink text-white text-decoration-none"><button class="btn btn-primary">Signup</button></a>
+                  </li>
+            </ul>
+          </div>
+          <div class="hamburger p-2">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+    </div>
+      <div class="container">
+        <div class="container">
+            <div class="modal fade" id="overlayModal" tabindex="-1" aria-labelledby="overlayModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header" style="background-color: #011B33 !important;">
+                            <button type="button" class="btn-close"  data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                            <div class="modal-body">
+                                <ul class="list-unstyled">
+                                  <li class="list-group-item pt-4"><a href="#" class="text-white text-decoration-none">Paymoff</a></li>
+                                  <li class="list-group-item pt-4 "><a href="web.html" class="text-white text-decoration-none">Rapid web</a></li>
+                                  <li class="list-group-item pt-4 "><a href="compiler.html" class="text-white text-decoration-none">Rapid compiler</a></li>
+                                  <li class="list-group-item pt-4 "><a href="compiler.html" class="text-white text-decoration-none">Rapid driller</a></li> 
+                                </ul> 
+                            </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+          <div class=" hero-section pt-4 mt-4 text-center">
+              <h2 class="heading">PAYMOFF SOFTWARE</h2>
+              <div class="container">
+                <div class="row justify-content-between">
+                  <div class="col-lg-6 mb-4 mb-lg-0 pt-4">
+                    <p style="font-weight: bold;">Streamline school financial management with our user-friendly app</p>
+                    <div class="d-md-flex gap-1 pt-5 mt-5">
+                      <div class=" mb-3">
+                        <a href="ask.html">
+                          <button class="rep-btn btn btn-primary btn-block text-white border-0">Talk to our representative</button>
+                        </a>
+                      </div>
+                      <div class=" mb-3">
+                        <button class="trans-btn btn btn-block btn-white text-white">Watch Demo video</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 image-wrapper">
+                    <img src="/images/paymofhero.png" alt="hero-img" class=" img-fluid" >
+                  </div>
+                </div>
+              </div>
+              
+        <div class="text-center pt-4 mt-4">
+    <div class="pt-4 text-center">
+    <div class="container offering-section text-center pt-4 mt-4">
+      <div class="d-flex flex-column align-items-center">
+        <div class="pb-4"><img src="/images/webIcon.png" alt="perk"></div>
+        <h3 class="gradient-btn  text-center">OUR PRODUCT OFFERING</h3>
+      </div>
+        <div class="row gap-4 justify-content-center pt-lg-5 pb-lg-5">
+          <div class="boxes3 col-lg-4 col-md-6 col-sm-12"><p style="padding: 80px 10px;">User-friendly app for efficient school financial management</p></div>
+          <div class="boxes3 col-lg-4 col-md-6 col-sm-12"><p style="padding: 80px 10px;">Ongoing support and training for your staff</p></div>
+          <div class="boxes3 col-lg-4 col-md-6 col-sm-12"><p style="padding: 80px 10px;">No need for paper-based receipt and manual debtors list</p></div>
+          <div class="boxes3 col-lg-4 col-md-6 col-sm-12"><p style="padding: 80px 10px;">Easy tracking of payment history across multiple terms</p></div>
+        </div>
+    </div>
+    <div class="pt-4">
+    <div class="container pt-4">
+    <div class="mt-4 pt-5">
+        <h3 class="gradient2 text-center">If you have this problem we can help you</h3>
+        <div class="row pt-4">
+            <div class="col-md-6 pt-4">
+              <div class="d-flex align-items-center">
+                <img src="/images/Vector2.png" alt="logo" class="me-3 mb-4">
+                <p style="font-size: 15px; font-weight: 600;" class="problems-wrapper-paragraph text-start">Your school financial department is struggling to manage paper-based receipts and debtors list</p>
+              </div>
+            </div>
+            <div class="col-md-6 pt-4">
+              <div class="d-flex align-items-center">
+                <img src="/images/Vector2.png" alt="logo" class="me-3 mb-4">
+                <p style="font-size: 15px; font-weight: 600;" class="problems-wrapper-paragraph text-start">You want to issue printable or digital receipts to parents</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row mt-4">
+            <div class="col-md-6">
+              <div class="d-flex align-items-center">
+                <img src="/images/Vector2.png" alt="logo" class="me-3 mb-4">
+                <p style="font-size: 15px; font-weight: 600;" class="problems-wrapper-paragraph text-start">You want to reduce printing cost and switch to a more eco-friendly approach</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex align-items-center">
+                <img src="/images/Vector2.png" alt="logo" class="me-3 mb-4">
+                <p style="font-size: 15px; font-weight: 600;" class="problems-wrapper-paragraph text-start">Your school struggles to keep track of student fee payments and outstanding debts, leading to confusion and errors in financial reporting.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-md-6">
+              <div class="d-flex align-items-center">
+                <img src="/images/Vector2.png" alt="logo" class="me-3 mb-4">
+                <p style="font-size: 15px; font-weight: 600;" class="problems-wrapper-paragraph text-start">You want to have an easy and efficient way of tracking payment history</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex align-items-center">
+                <img src="/images/Vector2.png" alt="logo" class="me-3 mb-4">
+                <p style="font-size: 15px; font-weight: 600;" class="problems-wrapper-paragraph text-start">Your school staff spends too much time managing financial records and tracking student fees, leaving less time for other important tasks.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-md-6">
+              <div class="d-flex align-items-center">
+                <img src="/images/Vector2.png" alt="logo" class="me-3 mb-4">
+                <p style="font-size: 15px; font-weight: 600;" class="problems-wrapper-paragraph text-start">Your school is concerned about the security of student financial information and wants a secure and reliable way to store and access this data.</p>
+              </div>
+            </div>
+          </div>         
+    </div>
+    </div>
+    <div>
+      <div>
+        <hr class="hr">
+      </div>
+    </div>
+    <div class="container pt-4 mt-4">
+      <img src="/images/how.png" alt="" class="img-fluid">
+      <!-- <h3 class="features-heading pt-2 text-center pt-4 mt-4">HOW DOES THIS WORK</h3> -->
+      <div class="row pt-4 mt-4">
+          <div class="col-md-8 col-sm-12 d-flex pt-4 mt-4">
+             
+
+
+            <div class="col-12 text-start">
+              <p style="color: rgb(163, 161, 161); font-size: 15px;"> Paymoff is an easy-to-use app that simplifies your school's financial management</p>
+              <p style="color: rgb(163, 161, 161); font-size: 15px;">process. With Paymoff, you can issue printable or digital receipts to parents, track</p>
+              <p style="color: rgb(163, 161, 161); font-size: 15px;">payment history across multiple terms, and manage debtors list without the need for</p> 
+              <p style="color: rgb(163, 161, 161); font-size: 15px;">manual paperwork.</p>
+              <p class="pt-4" style="font-size: 18px; font-weight: bold;">To learn more about Paymoff, check out our 2-minute demo video.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12 pt-4">
+            <div class="">
+              <img src="/images/Youtube player.png" alt="video" style="height: 250px; width: 100%; object-fit: cover;" class="img-fluid">
+            </div>
+          </div>
+        </div>          
+</div>     
+
+<div class="container pt-4 mt-4">
+  <h2 class="gradient2">HOW TO GET STARTED WITH RAPID WEB</h2>
+  <div class="container ">
+    <div class="pt-4 mt-4">
+    <div class="row pt-4 mt-4 pb-4 mb-4">
+      <div class="col-md-4 image-container1">
+        <img src="/images/web.png" alt="box" class="web-imag-box">
+        <div class="image-overlay"><img src="/images/Contact.png" alt=""></div>
+        <div class="pt-4 mt-4">
+          <p style="font-size: 14px;">Start by speaking to a Paymoff representative who will listen to your school's unique needs and provide you with information about how the software can help you. They will also answer any questions you may have about the product.</p>
+        </div>
+      </div>
+      <div class="col-md-4 image-container2">
+        <img src="/images/web.png" alt="box" class="web-imag-box">
+        <div class="image-overlay"><img src="/images/Setup.png" alt=""></div>
+        <div class="pt-4 mt-4">
+          <p style="font-size: 14px;">Once you've decided to use Paymoff, a team of experts will help you set up your school and customize the software to your specific needs. They will provide ongoing support and training to ensure that your school is getting the most out of the product.</p>
+        </div>
+      </div>
+      <div class="col-md-4 image-container3">
+        <img src="/images/web.png" alt="box" class="web-imag-box">
+        <div class="image-overlay"><img src="/images/Streamline.png" alt=""></div>
+        <div class="pt-4 mt-4">
+          <p style="font-size: 14px;">With Paymoff, you can streamline your school's financial management process and save time and resources. Parents can easily retrieve past receipts through the app, and you can track payment history with ease. Start enjoying the benefits of Paymoff today!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div>
+      <hr class="hr">
+    </div>
+  </div>
+  <div class="d-md-flex gap-2 pt-5 mt-5 justify-content-center">
+    <div class="mb-3">
+      <a href="ask.html">
+        <button class="rep-btn btn btn-primary btn-block text-white border-0">Talk to an advisor</button>
+      </a>
+    </div>
+    <div class="mb-3">
+      <button class="trans-btn btn btn-block btn-white text-white">See pricing</button>
+    </div>
+  </div>
+  
+
+    <div class="benefits-container container pt-4 mt-4">
+      <div class="pt-4 mt-4">
+        <div class="pt-4 text-wrapper">
+        <h2 style="font-size: 40px;" class="pb-4">NOT QUITE READY TO SIGN UP FOR THE <br class="mobile-none"> RAPID WEB YET?</h2>
+        <p class="pb-4 text-start" style="font-size: 16px;">No problem. Join our learning center today and get access to a wide range of resources and strategies that can help your school stand out. Our team of experts is constantly updating the learning center with new and innovative ideas that can help transform your school's digitalization process. Best of all, it's completely free! So why wait? Sign up now and take the first step towards transforming your school today.</p>
+        <span class="pt-4 pt-2 "><a href="index.html"><button class="btn-primary benefits-btn border-0 text-white">Register</button></a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pt-4">
+  <div class="schedule-section pt-4 mt-4">
+    <div class="pt-4 mt-4 schedule-section-img">
+      <img src="/images/schedule.png" alt="shedudule-img" class="img-fluid">
+    </div>
+      <div class="image-caption">
+      <h4 style="font-size: 32px;" class="pb-4">Schedule your meeting with Rapid Driller representative to get started</h4>
+      <span class="pt-4"><button class="btn-primary rep-btn border-0 text-white">Speak to a representative</button></span>
+    </div>
+  </div>
+  </div>
+  <div class="pt-4 mt-4"><hr style="color: #1393ECAD;"></div>
+<footer class="footer-section pt-4 mt-4">
+  <div class="wrapper pt-4 d-flex justify-content-between">
+    <div class="footer-tools">
+      <ul class="text-start">
+        <label for="" style="font-size: 20px;"><strong>All Tools</strong></label>
+        <li class="list-unstyled pt-2"><a href="#" class="list-unstyled text-white text-decoration-none">Paymoff</a></li>
+        <li class="list-unstyled pt-2"><a href="web.html" class="list-unstyled text-white text-decoration-none">Rapid web</a></li>
+        <li class="list-unstyled pt-2"><a href="diller.html" class="list-unstyled text-white text-decoration-none">Rapid driller</a></li>
+        <li class="list-unstyled pt-2"><a href="compiler.html" class="list-unstyled text-white text-decoration-none">Rapid compiler</a></li>
+      </ul>
+    </div>
+    <div class="footer-tools">
+      <ul class="text-start">
+        <label for="" style="font-size: 20px;"><strong>Links</strong></label>
+        <li class="list-unstyled"><a href="http://home.ushmoney.net/" class="list-unstyled text-white text-decoration-none">Home</a></li>
+        <li class="list-unstyled pt-2"><a href="#" class="list-unstyled text-white text-decoration-none">Pricing</a></li>
+        <li class="list-unstyled pt-2"><a href="#" class="list-unstyled text-white text-decoration-none">Learning Center</a></li>
+        <li class="list-unstyled pt-2"><a href="#" class="list-unstyled text-white text-decoration-none">Contact Representative</a></li>
+      </ul>
+    </div>
+    <div class="d-flex align-items-center">
+      <div class="copyright-section">
+        <p>COPYRIGHT: ushengineering @2023</p>
+        <div class="d-flex align-items-center">
+          <img src="/images/Vector.png" alt="logo" class="logo pb-2">
+          <p style="color:gray; font-size: 12px;">Powered by ush</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="social-section d-flex gap-4 pt-4 mt-4 container">
+    <div class="d-flex gap-2"><img src="/images/square-twitter.svg" alt="" class="" width="20"><li class="list-unstyled">Twitter</li></div>
+    <div class="d-flex gap-2"><img src="/images/LinkedIn.png" alt="LinkedIn" class="img-fluid"><li class="list-unstyled">LinkedIn</li></div>
+    <a href="https://www.facebook.com/ushengineering" target="_blank" class="text-decoration-none text-white">
+      <div class="d-flex gap-2">
+        <img src="/images/fb.png" alt="" class="img-fluid">
+        <li class="list-unstyled">Facebook</li>
+      </div>
+    </a>
+  </div>
+</footer>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    
+    <script>
+      const hamburger = document.querySelector('.hamburger');
+      const Navmenu = document.querySelector('.navmenu');
+  
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        Navmenu.classList.toggle('active');
+      });
+    document.querySelectorAll('navlink').forEach(n => n.addEventListener('click', ()=>{
+  
+        hamburger.classList.remove('active');
+        Navmenu.classList.remove('active');
+      }));
+
+
+    
+    </script>
+</body>
+</html>

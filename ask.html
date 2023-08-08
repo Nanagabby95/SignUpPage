@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="popUp.html">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500&family=Montserrat:wght@400;600;700;800&family=Poppins:wght@300;400;500&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Questions and Answer Page</title>
+</head>
+<style>
+    @media(min-width:920px){
+        body{
+          background-image: radial-gradient(160px circle at 51% 6%,  #011B33, transparent);
+          background-repeat: no-repeat;
+        }
+        .navbar{
+        width:100%;
+        justify-content:flex-start !important;
+        }
+        .navmenu-wrapper{
+            padding-left: 400px;
+        }
+    }
+    @media(max-width:768px){
+        body{
+          background-image: radial-gradient(160px circle at 51% 6%,  #011B33, transparent);
+          background-repeat: no-repeat;
+        }
+    }
+
+</style>
+<body><body class="">
+    <div class="nav-wrapper">
+      <nav class="navbar">
+        <div class="logo-wrapper">
+          <img src="/images/Vector.png" alt="logo" class="p-2">
+        </div>
+       
+        <div class="navmenu-wrapper">
+          <ul class="navmenu list-unstyled text-center">
+                <li class="navitem home">
+                  <a href="#" class="navlink text-white text-decoration-none">Home</a>
+                </li>
+                <li class="navitem list-group-item product" data-bs-toggle="modal" data-bs-target="#overlayModal">
+                  Products <span><img src="/images/expand_more.png" alt="" class="products-overlay"></span>
+                </li>
+                <li class="navitem pricing">
+                  <a href="#" class="navlink text-white text-decoration-none">Pricing</a>
+                </li>
+                <li class="navitem">
+                  <a href="index.html" class="navlink text-white text-decoration-none">Login</a>
+                </li>
+                <li class="navitem">
+                  <a href="index.html" class="navlink text-white text-decoration-none"><button class="btn btn-primary">Signup</button></a>
+                </li>
+          </ul>
+        </div>
+        <div class="hamburger p-2">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </div>
+  
+    
+  
+   
+    <div class="container">
+      <div class="container">
+          <div class="modal fade" id="overlayModal" tabindex="-1" aria-labelledby="overlayModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header" style="background-color: #011B33 !important;">
+                          <button type="button" class="btn-close"  data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                          <div class="modal-body">
+                              <ul class="list-unstyled">
+                                <li class="list-group-item pt-4"><a href="#" class="text-white text-decoration-none">Paymoff</a></li>
+                                <li class="list-group-item pt-4"><a href="#" class="text-white text-decoration-none">Rapid web</a></li>
+                                <li class="list-group-item pt-4"><a href="compiler.html" class="text-white text-decoration-none">Rapid compiler</a></li>
+                                <li class="list-group-item pt-4"><a href="diller.html" class="text-white text-decoration-none">Rapid driller</a></li> 
+                              </ul> 
+                          </div>
+                  </div> 
+              </div>
+          </div>
+      </div>  
+
+    <div class="container">
+    <div class="pt-4 container">
+    <div class="text-center pt-4 pb-4 container">
+        <h3 class="gradient" style="font-weight: bold; font-size: 32px;">Your meeting  has been reserved</h3>
+        <p class="gradient-paragraph" style="font-size: 17px; font-weight: bold;">To make the most of our time together, review these resources before our call</p>
+    </div>
+    <div class="container pt-4 text-align">
+        <h5 class="questionHeadings text-center pb-4 pt-2">What to expect working with rapid suite?</h5>
+        <div class="row justify-content-center gap-3 text-center">
+        <div class="col-12 col-md-auto text-center">
+            <img src="/images/forVideos.png" alt="video" class="rounded border border-success border-3" style="width: 100;">
+        </div>
+        <div class="col-12 col-md pb-4">
+            <div style="font-size: 14px; text-align: justify;">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum egestas eros, consequat sagittis
+                erat varius quis. Donec et sem varius, tempus mauris sit amet, scelerisque lorem. Duis nec venenatis
+                enim. Aenean consectetur cursus magna vitae ornare. Aenean dolor tortor, euismod ut efficitur sed,
+                convallis finibus massa. Sed fringilla varius faucibus. Nullam quis ligula ultrices, pretium quam in, pharetra purus.</p>
+                <p><a href="#" class="vidlink">Watch video</a></p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="container pt-4 ">
+            <h5 class="questionHeadings text-center pb-4 pt-2">How much does it cost working with rapid suite?</h5>
+        <div class="row justify-content-center gap-3 text-center">
+            <div class="col-12 col-md-auto text-center">
+                <img src="/images/forVideos.png" alt="video" class="rounded border border-success border-3" style="width: 100;">
+            </div>
+            <div class="col-12 col-md pb-4">
+            <div style="font-size: 14px; text-align: justify;">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum egestas eros, consequat sagittis
+                    erat varius quis. Donec et sem varius, tempus mauris sit amet, scelerisque lorem. Duis nec venenatis
+                    enim. Aenean consectetur cursus magna vitae ornare. Aenean dolor tortor, euismod ut efficitur sed,
+                    convallis finibus massa. Sed fringilla varius faucibus. Nullam quis ligula ultrices, pretium quam in, pharetra purus.</p>
+                <p><a href="#" class="vidlink">Watch video</a></p>
+            </div>
+        </div>
+</div>
+</div>
+
+            <div class="container pt-4">
+                <h5 class="questionHeadings text-center pb-4 pt-2">How does Rapid suite compare with other option?
+                </h5>
+    <div class="container">
+    <div class="row justify-content-center gap-3 text-center">
+        <div class="col-12 col-md-auto text-center">
+            <img src="/images/forVideos.png" alt="video" class="rounded border border-success border-3" style="width: 100;">
+        </div>
+        <div class="col-12 col-md">
+            <div style="font-size: 14px; text-align: justify;">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum egestas eros, consequat sagittis
+                    erat varius quis. Donec et sem varius, tempus mauris sit amet, scelerisque lorem. Duis nec venenatis
+                    enim. Aenean consectetur cursus magna vitae ornare. Aenean dolor tortor, euismod ut efficitur sed,
+                    convallis finibus massa. Sed fringilla varius faucibus. Nullam quis ligula ultrices, pretium quam in, pharetra purus.</p>
+                <p><a href="#" class="vidlink">Watch video</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+<script>
+    const hamburger=document.querySelector('.hamburger');
+const Navmenu=document.querySelector('.navmenu');
+
+hamburger.addEventListener('click', ()=>{
+hamburger.classList.toggle('active')
+Navmenu.classList.toggle('active')
+})
+
+document.querySelectorAll('.navlink').forEach(n => n.addEventListener('click', ()=>{
+  hamburger.classList.remove('active');
+  Navmenu.classList.remove('active');
+}))
+</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building a simple</title>
+</head>
+<style>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(26, 21, 58);
+    color: #ffffff;
+}
+nav{
+    display:flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3em;
+    padding: 3em ;
+}
+ul{
+    display: flex;
+    gap:  3em;
+}
+li{
+    list-style: none;
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: uppercase; 
+}
+a{
+    text-decoration: none;
+}
+span{
+    color: dodgerblue;
+}
+.logo{
+    font-size: 40px;
+}
+</style>
+<body>
+    <nav>
+        <div>
+            <label for="logo" class="logo">Single Page <span>Website</span></label></div>
+        <ul>
+            <a href="#"><li>Home</li></a>
+           <a href="#"><li><span>About</span></li></a>
+            <a href="#"><li>Porfolio</li></a>
+            <a href="#"><li>Blog</li></a>
+            <a href="#"><li>Contact Us</li></a>
+        </ul>
+    </nav>
+    <script src="class.js"></script>
+</body>
+</html>

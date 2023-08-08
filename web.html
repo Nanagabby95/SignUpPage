@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500&family=Montserrat:wght@400;600;700;800&family=Poppins:wght@300;400;500&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Rapid Web</title>  
+</head>
+<style>
+  @media(min-width:920px){
+      body{
+        background-image: radial-gradient(270px circle at 77% 7%,  #033669, transparent);
+        background-repeat: no-repeat;
+      }
+      .navbar{
+      width:100%;
+      justify-content:flex-start !important;
+      }
+      .trans-btn{
+        border-color: grey !important;
+        padding: 7px 50px !important;
+      }
+      .navmenu-wrapper{
+          padding-left: 400px;
+      }
+      .boxes2:nth-child(4){
+        background-image: radial-gradient(100px  at 40% 25%, #042f42, transparent) !important;
+        background-repeat: no-repeat;
+      }
+      .boxes2-wrapper{
+        background-image: radial-gradient(100px  at 7% 35%, #042f42, transparent) !important;
+        background-repeat: no-repeat;
+      }
+      .youtube-section{
+        background-image: radial-gradient(200px  at 50% 8%, #093d53, transparent) !important;
+        background-repeat: no-repeat;
+      }
+  }
+  @media(max-width:768px){
+      body{
+        background-image: radial-gradient(160px circle at 51% 6%,  #011B33, transparent);
+        background-repeat: no-repeat;
+      }
+  }
+  
+</style>
+<body>
+    <div class="nav-wrapper">
+        <nav class="navbar">
+          <div class="logo-wrapper">
+            <img src="/images/Vector.png" alt="logo" class="p-2">
+          </div>
+         
+          <div class="navmenu-wrapper">
+            <ul class="navmenu list-unstyled text-center">
+                  <li class="navitem home">
+                    <a href="http://home.ushmoney.net/" class="navlink text-white text-decoration-none">Home</a>
+                  </li>
+                  <li class="navitem list-group-item product" data-bs-toggle="modal" data-bs-target="#overlayModal">
+                    Products <span><img src="/images/expand_more.png" alt="" class="products-overlay"></span>
+                  </li>
+                  <li class="navitem pricing">
+                    <a href="#" class="navlink text-white text-decoration-none">Pricing</a>
+                  </li>
+                  <li class="navitem">
+                    <a href="index.html" class="navlink text-primary text-decoration-none">Login</a>
+                  </li>
+                  <li class="navitem">
+                    <a href="index.html" class="navlink text-white text-decoration-none"><button class="btn btn-primary">Signup</button></a>
+                  </li>
+            </ul>
+          </div>
+          <div class="hamburger p-2">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+    </div>
+      <div class="container">
+        <div class="container">
+            <div class="modal fade" id="overlayModal" tabindex="-1" aria-labelledby="overlayModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header" style="background-color: #011B33 !important;">
+                            <button type="button" class="btn-close"  data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                            <div class="modal-body">
+                                <ul class="list-unstyled">
+                                  <li class="list-group-item pt-4"><a href="#" class="text-white text-decoration-none">Paymoff</a></li>
+                                  <li class="list-group-item pt-4 "><a href="web.html" class="text-white text-decoration-none">Rapid web</a></li>
+                                  <li class="list-group-item pt-4 "><a href="compiler.html" class="text-white text-decoration-none">Rapid compiler</a></li>
+                                  <li class="list-group-item pt-4 "><a href="compiler.html" class="text-white text-decoration-none">Rapid driller</a></li> 
+                                </ul> 
+                            </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+          <div class="container hero-section pt-4 mt-4">
+              <h2 class="heading text-uppercase">Rapid Web</h2>
+              <div class="row justify-content-between">
+                <div class="col-lg-4 mb-8 mb-lg-0">
+                  <p style="font-weight: bold;">Empower your school with an easy-to-use website builder and blog manager</p>
+                  <div class="pt-4 mt-4">
+                    <a href="ask.html"><button class="rep-btn btn-primary text-white border-0 w-100">Get started now</button></a>
+                  </div>
+                </div>
+                <div class="col-lg-4 image-wrapper">
+                  <img src="/images/paymoff.png" alt="hero-img" class="hero-img">
+                </div>
+              </div>
+          </div>
+        <div class="text-center pt-4 mt-4">
+    <div class="pt-4 text-center">
+    <div class="container offering-section text-center pt-4 mt-4">
+        <h3 class="gradient2 text-center pb-2 text-uppercase btn-sm">Already have a website?</h3>
+        <div class="pt-4 image-gradient">
+            <p class="pt-4 text-center" style="font-size: 15px; font-weight: bold;">Get a free website assessment test or update your UI with just a click.</p>
+            <p class="pt-4 text-center" style="font-size: 15px; font-weight: bold;"> Need to integrate other Rapid Suite products into your website? </p>
+            <div class="pb-4"><a href=""><button class="trans-btn text-white btn-sm border-gray">click here</button></a></div>
+        </div>
+        <div class="pb-4 mt-4"><hr class="hr"></div>
+    </div>
+    </div>
+    <div class="pt-4">
+    <div class="container pt-4">
+    <div class="">
+      <div class="perk-wrapper">
+        <img src="/images/webIcon.png" alt="icon">
+        <div class="pt-2"><a href="" class=""><button class="perk">PERKS</button></a></div>
+      </div>
+        <div class="container-fluid pt-4">
+          <div class="row pt-4">
+            <div class="col-md-6 pt-4 d-flex flex-column justify-content-between">
+              <div class="d-flex align-items-center mb-4">
+                <img src="/images/Vector2.png" alt="logo" class="me-3">
+                <p style="font-size: 15px; font-weight: 600;" class="problems-wrapper-paragraph text-start">Easily create a custom website and blog within minutes using our form-based approach</p>
+              </div>
+              <div class="d-flex align-items-center mb-4">
+                <img src="/images/Vector2.png" alt="logo" class="me-3">
+                <p style="font-size: 15px; font-weight: 600;" class="problems-wrapper-paragraph text-start">No need for a programmer or IT expert</p>
+              </div>
+              <div class="d-flex align-items-center mb-4">
+                <img src="/images/Vector2.png" alt="logo" class="me-3">
+                <p style="font-size: 15px; font-weight: 600;" class="problems-wrapper-paragraph text-start">Ongoing support and training for your school staff</p>
+              </div>
+              <div class="d-flex align-items-center mb-4">
+                <img src="/images/Vector2.png" alt="logo" class="me-3">
+                <p style="font-size: 15px; font-weight: 600;" class="problems-wrapper-paragraph text-start">Improve your school's online visibility and engagement with parents and students.</p>
+              </div>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center align-items-center pt-4">
+              <img src="/images/paymoff.png" alt="img" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      <div class="pt-4 mt-4">      
+        <div class="pt-4">
+          <hr class="hr">
+        </div>
+      </div>
+
+      <div class="boxes2-wrapper container">
+        <h2 class="gradient2 pt-4 pb-4 text-center">IF YOU HAVE THIS PROBLEM, WE CAN HELP YOU</h2>
+        <div class="row gap-4 pt-4 mt-4 d-flex justify-content-center">
+          <div class="boxes2 col-10 col-sm-6 text-center">
+            <p>Your school needs a website and blog but you don't have the resources to hire a professional web designer</p>
+          </div>
+          <div class="boxes2 col-10 col-sm-6 text-center">
+            <p>Your current website is outdated, difficult to navigate or not mobile-friendly</p>
+          </div> 
+          <div class="boxes2 col-10 col-sm-6 text-center">
+            <p>You need a better way to manage and organize your school's content and information online</p>
+          </div>
+          <div class="boxes2 col-10 col-sm-6 text-center">
+            <p>You want an easy and affordable way to manage your school's online presence without needing an IT expert</p>
+          </div> 
+          <div class="boxes2 col-10 col-sm-6 text-center">
+            <p>You want to improve your school's online visibility and engagement with parents and students</p>
+          </div>        
+        </div>
+      </div> 
+    </div>
+    <div class="container pt-4 mt-4 youtube-section">
+      <img src="/images/how.png" alt="" class="img-fluid">
+      <div class="row pt-4 mt-4">
+          <div class="col-md-8 col-sm-12 d-flex pt-4 mt-4">
+            <div class="col-12 text-start">
+              <p style="color: rgb(163, 161, 161); font-size: 15px;">With Rapid Web, you can easily create a custom website and blog using our intuitive</p>
+              <p style="color: rgb(163, 161, 161); font-size: 15px;">and user-friendly form-based approach. You don't need to be a programmer or have</p>
+              <p style="color: rgb(163, 161, 161); font-size: 15px;"> any coding knowledge to create a professional-looking website. Our experts will</p> 
+              <p style="color: rgb(163, 161, 161); font-size: 15px;">provide ongoing support and training to ensure that your school is getting the most out of the product.</p>
+              <p class="pt-4" style="font-size: 18px; font-weight: bold;">To learn more about Rapid Web, check out this 2-minute video</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12 pt-4">
+            <div class="">
+              <img src="/images/Youtube player.png" alt="video" style="height: 250px; width: 100%; object-fit: cover;" class="img-fluid">
+            </div>
+      </div>
+</div> 
+<div class="pt-4 mt-4">
+<div><hr class="hr"></div>
+</div>
+
+<div class="container pt-4 mt-4">
+  <h2 class="gradient2">HOW TO GET STARTED WITH RAPID WEB</h2>
+  <div class="container ">
+    <div class="pt-4 mt-4">
+    <div class="row pt-4 mt-4 pb-4 mb-4">
+      <div class="col-md-4 image-container1">
+        <img src="/images/web.png" alt="box" class="web-imag-box">
+        <div class="image-overlay"><img src="/images/Create.png" alt=""></div>
+        <div class="pt-4 mt-4">
+          <p style="font-size: 14px;">Start by creating a Rapid Web account and choose a plan that fits your school's needs. Our team of experts will guide you through the process of creating your custom website and blog using our form-based approach.</p>
+        </div>
+      </div>
+      <div class="col-md-4 image-container2">
+        <img src="/images/web.png" alt="box" class="web-imag-box">
+        <div class="image-overlay"><img src="/images/Setup.png" alt=""></div>
+        <div class="pt-4 mt-4">
+          <p style="font-size: 14px;">Once you've signed up for Rapid Web, a team of experts will help you set up your website and customize the design and layout to your specific needs. They will provide ongoing support and training to ensure that your school is getting the most out of the product.</p>
+        </div>
+      </div>
+      <div class="col-md-4 image-container3">
+        <img src="/images/web.png" alt="box" class="web-imag-box">
+        <div class="image-overlay"><img src="/images/Content.png" alt=""></div>
+        <div class="pt-4 mt-4">
+          <p style="font-size: 14px;">You can start adding content to your website and blog immediately after setup. With Rapid Web’s intuitive and user-friendly interface, you can easily add and manage your school’s content and information online.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div>
+      <hr class="hr">
+    </div>
+  </div>
+  <div class="perk-wrapper pt-4 mt-2">
+    <img src="/images/webIcon.png" alt="icon">
+    <div class="pt-2"><a href="" class=""><button class="perk">LET'S GO</button></a></div>
+  </div>
+  </div>
+  <div class="pt-4 mt-2 btn-div text-center">
+    <div><a href="tel:+2349160308124"><button class="btn compiler-btn text-white border-0">Get started now</button></a></div>
+  </div><button class="btn btn-outline-light " style="background-color: transparent;">See pricing</button></div>
+  </div>
+  
+<div class="pt-4">
+ <div class="pt-4">
+  <div class="container text-center">
+    <h1 class="gradient3 pt-4 font-weight-bold">ALREADY HAVE A WEBSITE?</h1>
+    <div class="container">
+    <div class="pt-4 mt-4">
+      <div class="row pt-4 mt-4 pb-4 mb-4 gap-5 text-center d-flex justify-content-center">
+        <div class="col-md-4  boxes3">
+          <div class="pt-4 mt-4">
+            <p class="gradient3" style="font-weight: 600;">Get a free website assessment test</p>
+            <p style="font-size: 12px;">Click here to get a free website assessment test and find out how your school's website can be improved.</p>
+            <div class="mb-4"><button class="box-btn">Learn more</button></div>
+          </div>
+        </div>
+        <div class="col-md-4  boxes3">
+          <div class="pt-4 mt-4">
+            <p class="gradient3" style="font-weight: 600;">UPDATE YOUR UI</p>
+            <p style="font-size: 12px;">Click here to hire the team to upgrade your website's UI and improve its design and layout.</p>
+            <div class="mt-4 pt-4"><button class="box-btn">Learn more</button></div>
+          </div>
+        </div>
+        <div class="col-md-4  boxes3">
+          <div class="pt-4 mt-4">
+            <p class="gradient3" style="font-weight: 600;">Integrate other rapid suite products</p>
+            <p style="font-size: 12px;">Click here to learn how you can integrate other Rapid Suite products, such as Rapid Compiler or Rapid Web, into your existing school's website.</p>
+            <div class="mb-4"><button class="box-btn">Learn more</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  
+    <div class="benefits-container container pt-4 mt-4">
+      <div class="pt-4 mt-4">
+        <div class="pt-4 text-wrapper">
+        <h2 style="font-size: 40px;" class="pb-4">NOT QUITE READY TO SIGN UP FOR THE <br class="mobile-none"> RAPID WEB YET?</h2>
+        <p class="pb-4 text-start" style="font-size: 16px;">No problem. Join our learning center today and get access to a wide range of resources and strategies that can help your school stand out. Our team of experts is constantly updating the learning center with new and innovative ideas that can help transform your school's digitalization process. Best of all, it's completely free! So why wait? Sign up now and take the first step towards transforming your school today.</p>
+        <span class="pt-4 pt-2 "><a href="index.html"><button class="btn-primary benefits-btn border-0 text-white">Register</button></a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pt-4">
+  <div class="schedule-section pt-4 mt-4">
+    <div class="pt-4 mt-4 schedule-section-img">
+      <img src="/images/schedule.png" alt="shedudule-img" class="img-fluid schedule">
+      <div class="image-caption"><h4 style="font-size: 32px;" class="pb-4">Schedule your meeting with Rapid Driller representative to get started</h4>
+      <span class="pt-4"><button class="btn-primary rep-btn border-0 text-white">Speak to a representative</button></span>
+    </div>
+  </div>
+  </div>
+  <div class="pt-4 mt-4"><hr style="color: #1393ECAD;"></div>
+<footer class="footer-section pt-4 mt-4">
+  <div class="wrapper pt-4 d-flex justify-content-between">
+    <div class="footer-tools">
+      <ul class="text-start">
+        <label for="" style="font-size: 20px;"><strong>All Tools</strong></label>
+        <li class="list-unstyled"><a href="#" class="list-unstyled text-white text-decoration-none">Paymoff</a></li>
+        <li class="list-unstyled"><a href="web.html" class="list-unstyled text-white text-decoration-none">Rapid web</a></li>
+        <li class="list-unstyled"><a href="diller.html" class="list-unstyled text-white text-decoration-none">Rapid driller</a></li>
+        <li class="list-unstyled"><a href="compiler.html" class="list-unstyled text-white text-decoration-none">Rapid compiler</a></li>
+      </ul>
+    </div>
+    <div class="footer-tools">
+      <ul class="text-start">
+        <label for="" style="font-size: 20px;"><strong>Links</strong></label>
+        <li class="list-unstyled"><a href="http://home.ushmoney.net/" class="list-unstyled text-white text-decoration-none">Home</a></li>
+        <li class="list-unstyled"><a href="#" class="list-unstyled text-white text-decoration-none">Pricing</a></li>
+        <li class="list-unstyled"><a href="#" class="list-unstyled text-white text-decoration-none">Learning Center</a></li>
+        <li class="list-unstyled"><a href="#" class="list-unstyled text-white text-decoration-none">Contact Representative</a></li>
+      </ul>
+    </div>
+    <div class="d-flex align-items-center">
+      <div class="copyright-section">
+        <p>COPYRIGHT: ushengineering @2023</p>
+        <div class="d-flex align-items-center">
+          <img src="/images/Vector.png" alt="logo" class="logo pb-2">
+          <p style="color:gray; font-size: 12px;">Powered by ush</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="social-section d-flex gap-4 pt-4 mt-4 container">
+    <div class="d-flex gap-2"><img src="/images/square-twitter.svg" alt="" class="" width="20"><li class="list-unstyled">Twitter</li></div>
+    <div class="d-flex gap-2"><img src="/images/LinkedIn.png" alt="" class="img-fluid"><li class="list-unstyled">LinkedIn</li></div>
+    <a href="https://www.facebook.com/ushengineering" target="_blank" class="text-decoration-none text-white">
+      <div class="d-flex gap-2">
+        <img src="/images/fb.png" alt="" class="img-fluid">
+        <li class="list-unstyled">Facebook</li>
+      </div>
+    </a>
+  </div>
+</footer>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    
+    <script>
+      const hamburger = document.querySelector('.hamburger');
+      const Navmenu = document.querySelector('.navmenu');
+  
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        Navmenu.classList.toggle('active');
+      });
+    document.querySelectorAll('navlink').forEach(n => n.addEventListener('click', ()=>{
+  
+        hamburger.classList.remove('active');
+        Navmenu.classList.remove('active');
+      }));
+  
+    </script>
+</body>
+</html>
