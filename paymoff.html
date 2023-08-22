@@ -15,9 +15,12 @@
   .trans-btn{
     margin: 0 !important;
   }
-  .rep-btn, .trans-btn{
+  .rep-btn{
     margin: 0;
-    padding: 8px 30px !important;
+  }
+  .trans-btn{
+    margin: 0;
+    padding: 8px 50px !important;
   }
   .schedule-section{
     position: relative;
@@ -46,45 +49,47 @@
     padding: 4px 17px !important;
     margin-bottom: 5px !important;
   }
-  .gradient-btn {
-      
-      width: 100% !important;
-      
+    .rep-btn{
+      width: 100%;
     }
+    .trans-btn{
+      width: 100%;
+    }
+    .image-wrapper{
+    display: none;
+    }
+
  }
 </style>
 <body>
-    <div class="nav-wrapper">
-        <nav class="navbar">
-          <div class="logo-wrapper">
-            <img src="/images/Vector.png" alt="logo" class="p-2">
-          </div>
-         
-          <div class="navmenu-wrapper">
-            <ul class="navmenu list-unstyled text-center">
-                  <li class="navitem home">
-                    <a href="http://home.ushmoney.net/" class="navlink text-white text-decoration-none">Home</a>
-                  </li>
-                  <li class="navitem list-group-item product" data-bs-toggle="modal" data-bs-target="#overlayModal">
-                    Products <span><img src="/images/expand_more.png" alt="" class="products-overlay"></span>
-                  </li>
-                  <li class="navitem pricing">
-                    <a href="#" class="navlink text-white text-decoration-none">Pricing</a>
-                  </li>
-                  <li class="navitem">
-                    <a href="index.html" class="navlink text-primary text-decoration-none">Login</a>
-                  </li>
-                  <li class="navitem">
-                    <a href="index.html" class="navlink text-white text-decoration-none"><button class="btn btn-primary">Signup</button></a>
-                  </li>
-            </ul>
-          </div>
-          <div class="hamburger p-2">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
-        </nav>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top pt-5">
+    <div class="container-fluid">
+        <div  class="show-mobile hide-desktop"><a class="navbar-brand" href="#"><img src="/images/Vector.png" alt="logo"></a></div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <div class="show-desktop hide-mobile"><a class="navbar-brand" href="#"><img src="/images/Vector.png" alt="logo"></a>
+        </div>
+        <ul class="navbar-nav justify-content-between gap-4">
+          <li class="nav-item pt-2">
+            <a class="nav-link active text-white" aria-current="page" href="http://home.ushmoney.net/">Home</a>
+          </li>
+          <li class="nav-item list-group-item text-white pb-3" data-bs-toggle="modal" data-bs-target="#overlayModal" style="cursor: pointer;">
+            <a href="" class="nav-link active text-white"></a>
+            Products <span><img src="/images/expand_more.png" alt="" class="products-overlay"></span>
+          </li>
+          <li class="nav-item pt-2">
+            <a class="nav-link text-white" href="pricing.html">Pricing</a>
+          </li>
+        </ul>
+        <dv class="gap-3 nav-btn-wrapper">
+          <a href="login.html"><button class="btn login" >Login</button></a>
+          <a href="login.html"><button class="btn signup">Sign up</button></a>
+        </div>
+      </div>
+    </div>
+  </nav>
     </div>
       <div class="container">
         <div class="container">
@@ -105,43 +110,35 @@
                     </div> 
                 </div>
             </div>
-        </div>
+        </div>   
+          <div class="pt-4 mt-5">
+            <div class="container-fluid pt-4 d-flex compiler-hero-wrapper hero-section flex-wrap pb-4 mt-5">
+                  <div class="container-fluid col-lg-8 col-md-10 col-sm-12 pt-4">
+                      <h2 class="heading pt-2">PAYMOFF SOFTWARE</h2>
+                      <p class="heading-paragraph col-lg-8 col-md-10 col-sm-12 pt-4" style="font-size: 20px; font-weight: bold; justify-content: justify;">Streamline school financial management with our user-friendly app</p>
+                  </div>
+                  <div class="container-fluid col-lg-4 col-md-6 image-wrapper" ><img src="/images/paymofhero.png" alt="hero-img" class="img-fluid"></div>
+                  </div>
+                  <div class="container-fluid pb-4 mb-4 btn-div">
+                      <a href="repForm.html"><button class="btn compiler-btn text-white border-0" submit>Speak to a representative</button></a>
+                      <a href="#watch-demo"><button class="btn btn-outline-light" style="background-color: transparent;" submit> Watch Demo video</button></a>
+                  </div>
+            </div>
 
-          <div class=" hero-section pt-4 mt-4 text-center">
-              <h2 class="heading">PAYMOFF SOFTWARE</h2>
-              <div class="container">
-                <div class="row justify-content-between">
-                  <div class="col-lg-6 mb-4 mb-lg-0 pt-4">
-                    <p style="font-weight: bold;">Streamline school financial management with our user-friendly app</p>
-                    <div class="d-md-flex gap-1 pt-5 mt-5">
-                      <div class=" mb-3">
-                        <a href="ask.html">
-                          <button class="rep-btn btn btn-primary btn-block text-white border-0">Talk to our representative</button>
-                        </a>
-                      </div>
-                      <div class=" mb-3">
-                        <button class="trans-btn btn btn-block btn-white text-white">Watch Demo video</button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 image-wrapper">
-                    <img src="/images/paymofhero.png" alt="hero-img" class=" img-fluid" >
-                  </div>
-                </div>
-              </div>
-              
+
+
         <div class="text-center pt-4 mt-4">
     <div class="pt-4 text-center">
     <div class="container offering-section text-center pt-4 mt-4">
       <div class="d-flex flex-column align-items-center">
         <div class="pb-4"><img src="/images/webIcon.png" alt="perk"></div>
-        <h3 class="gradient-btn  text-center">OUR PRODUCT OFFERING</h3>
+        <h3 class="gradient-btn  text-center pb-md-3 pb-sm-2">OUR PRODUCT OFFERINGs</h3>
       </div>
         <div class="row gap-4 justify-content-center pt-lg-5 pb-lg-5">
-          <div class="boxes3 col-lg-4 col-md-6 col-sm-12"><p style="padding: 80px 10px;">User-friendly app for efficient school financial management</p></div>
-          <div class="boxes3 col-lg-4 col-md-6 col-sm-12"><p style="padding: 80px 10px;">Ongoing support and training for your staff</p></div>
-          <div class="boxes3 col-lg-4 col-md-6 col-sm-12"><p style="padding: 80px 10px;">No need for paper-based receipt and manual debtors list</p></div>
-          <div class="boxes3 col-lg-4 col-md-6 col-sm-12"><p style="padding: 80px 10px;">Easy tracking of payment history across multiple terms</p></div>
+          <div class="boxes3 col-lg-4 col-md-6 col-sm-12"><p style="padding: 40px 10px; text-align: center;">User-friendly app for efficient school financial management</p></div>
+          <div class="boxes3 col-lg-4 col-md-6 col-sm-12"><p style="padding: 40px 10px; text-align: center;">Ongoing support and training for your staff</p></div>
+          <div class="boxes3 col-lg-4 col-md-6 col-sm-12"><p style="padding: 40px 10px; text-align: center;">No need for paper-based receipt and manual debtors list</p></div>
+          <div class="boxes3 col-lg-4 col-md-6 col-sm-12"><p style="padding: 40px 10px; text-align: center;">Easy tracking of payment history across multiple terms</p></div>
         </div>
     </div>
     <div class="pt-4">
@@ -206,30 +203,25 @@
         <hr class="hr">
       </div>
     </div>
-    <div class="container pt-4 mt-4">
-      <img src="/images/how.png" alt="" class="img-fluid">
-      <!-- <h3 class="features-heading pt-2 text-center pt-4 mt-4">HOW DOES THIS WORK</h3> -->
-      <div class="row pt-4 mt-4">
-          <div class="col-md-8 col-sm-12 d-flex pt-4 mt-4">
-             
-
-
-            <div class="col-12 text-start">
-              <p style="color: rgb(163, 161, 161); font-size: 15px;"> Paymoff is an easy-to-use app that simplifies your school's financial management</p>
-              <p style="color: rgb(163, 161, 161); font-size: 15px;">process. With Paymoff, you can issue printable or digital receipts to parents, track</p>
-              <p style="color: rgb(163, 161, 161); font-size: 15px;">payment history across multiple terms, and manage debtors list without the need for</p> 
-              <p style="color: rgb(163, 161, 161); font-size: 15px;">manual paperwork.</p>
-              <p class="pt-4" style="font-size: 18px; font-weight: bold;">To learn more about Paymoff, check out our 2-minute demo video.</p>
+    <div class="container-fluid" id="watch-demo">
+      <h3 class="gradient2 pt-2 text-center">HOW DOES THIS WORK</h3>
+      <div class="row pt-4">
+        <div class="col-md-6 col-sm-12 d-flex pt-4">
+            <div class="col-12 text-start" style="font-size: 17px;">
+                <p style="font-size: 16px !important;">When you adopt Rapid Compiler to digitalize your result compilation process, your</p>
+                <p style="font-size: 16px !important;">teachers would be able to progressively enter students' assessments
+                through the</p>
+                <p style="font-size: 16px !important;">course of the term, at their comfort, using just mobile devices</p>
+                <p style="font-size: 16px !important;">Compiler performs all the magic (calculation) needed for compiling the results</p>
+                <p style="font-size: 16px !important;">and generates the result for students in your school, based on your selected result formats.</p>
+                <p class="pt-4" style="font-size: 16px; font-weight: bold;">To learn more about Rapid Compiler, check out this 2-minute video</p>
             </div>
-          </div>
-          <div class="col-md-4 col-sm-12 pt-4">
-            <div class="">
-              <img src="/images/Youtube player.png" alt="video" style="height: 250px; width: 100%; object-fit: cover;" class="img-fluid">
-            </div>
-          </div>
-        </div>          
-</div>     
-
+        </div>
+        <div class="col-md-6 col-sm-12 pt-4">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/hHyjkIX0E2g" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>               
+</div> 
 <div class="container pt-4 mt-4">
   <h2 class="gradient2">HOW TO GET STARTED WITH RAPID WEB</h2>
   <div class="container ">
@@ -263,24 +255,18 @@
       <hr class="hr">
     </div>
   </div>
-  <div class="d-md-flex gap-2 pt-5 mt-5 justify-content-center">
-    <div class="mb-3">
-      <a href="ask.html">
-        <button class="rep-btn btn btn-primary btn-block text-white border-0">Talk to an advisor</button>
-      </a>
-    </div>
-    <div class="mb-3">
-      <button class="trans-btn btn btn-block btn-white text-white">See pricing</button>
-    </div>
+  <div class="buttons-wrapper text-center justify-content-between pt-4">
+    <a href="tel:+2349160308124"><button class="btn compiler-btn text-white border-0 mx-2">Talk to an advisor</button></a>
+    <a href="pricing.html"><button class="btn btn-outline-light mx-2 text-white" style="background-color: transparent;" submit>See pricing</button></a>
   </div>
-  
+
 
     <div class="benefits-container container pt-4 mt-4">
       <div class="pt-4 mt-4">
         <div class="pt-4 text-wrapper">
         <h2 style="font-size: 40px;" class="pb-4">NOT QUITE READY TO SIGN UP FOR THE <br class="mobile-none"> RAPID WEB YET?</h2>
-        <p class="pb-4 text-start" style="font-size: 16px;">No problem. Join our learning center today and get access to a wide range of resources and strategies that can help your school stand out. Our team of experts is constantly updating the learning center with new and innovative ideas that can help transform your school's digitalization process. Best of all, it's completely free! So why wait? Sign up now and take the first step towards transforming your school today.</p>
-        <span class="pt-4 pt-2 "><a href="index.html"><button class="btn-primary benefits-btn border-0 text-white">Register</button></a></span>
+        <p class="pb-4 text-start" style="font-size: 18px;">No problem. Join our learning center today and get access to a wide range of resources and strategies that can help your school stand out. Our team of experts is constantly updating the learning center with new and innovative ideas that can help transform your school's digitalization process. Best of all, it's completely free! So why wait? Sign up now and take the first step towards transforming your school today.</p>
+        <span class="pt-4 pt-2 "><a href="login.html"><button class="btn-primary benefits-btn border-0 text-white">Register</button></a></span>
         </div>
       </div>
     </div>
@@ -297,67 +283,49 @@
   </div>
   </div>
   <div class="pt-4 mt-4"><hr style="color: #1393ECAD;"></div>
-<footer class="footer-section pt-4 mt-4">
-  <div class="wrapper pt-4 d-flex justify-content-between">
-    <div class="footer-tools">
-      <ul class="text-start">
-        <label for="" style="font-size: 20px;"><strong>All Tools</strong></label>
-        <li class="list-unstyled pt-2"><a href="#" class="list-unstyled text-white text-decoration-none">Paymoff</a></li>
-        <li class="list-unstyled pt-2"><a href="web.html" class="list-unstyled text-white text-decoration-none">Rapid web</a></li>
-        <li class="list-unstyled pt-2"><a href="diller.html" class="list-unstyled text-white text-decoration-none">Rapid driller</a></li>
-        <li class="list-unstyled pt-2"><a href="compiler.html" class="list-unstyled text-white text-decoration-none">Rapid compiler</a></li>
-      </ul>
-    </div>
-    <div class="footer-tools">
-      <ul class="text-start">
-        <label for="" style="font-size: 20px;"><strong>Links</strong></label>
-        <li class="list-unstyled"><a href="http://home.ushmoney.net/" class="list-unstyled text-white text-decoration-none">Home</a></li>
-        <li class="list-unstyled pt-2"><a href="#" class="list-unstyled text-white text-decoration-none">Pricing</a></li>
-        <li class="list-unstyled pt-2"><a href="#" class="list-unstyled text-white text-decoration-none">Learning Center</a></li>
-        <li class="list-unstyled pt-2"><a href="#" class="list-unstyled text-white text-decoration-none">Contact Representative</a></li>
-      </ul>
-    </div>
-    <div class="d-flex align-items-center">
-      <div class="copyright-section">
-        <p>COPYRIGHT: ushengineering @2023</p>
-        <div class="d-flex align-items-center">
-          <img src="/images/Vector.png" alt="logo" class="logo pb-2">
-          <p style="color:gray; font-size: 12px;">Powered by ush</p>
+  
+  <footer class="footer-section pt-4 mt-4">
+    <div class="container pt-4">
+      <div class="row gap-lg-5 gap-md-4">
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="footer-tools" style="font-size: 20px;">
+            <h4><strong>All Tools</strong></h4>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white text-decoration-none">Paymoff</a></li>
+              <li><a href="web.html" class="text-white text-decoration-none">Rapid web</a></li>
+              <li><a href="diller.html" class="text-white text-decoration-none">Rapid driller</a></li>
+              <li><a href="compiler.html" class="text-white text-decoration-none">Rapid compiler</a></li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="footer-tools" style="font-size: 20px;">
+            <h4><strong>Links</strong></h4>
+            <ul class="list-unstyled">
+              <li><a href="http://home.ushmoney.net/" class="text-white text-decoration-none">Home</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Pricing</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Learning Center</a></li>
+              <li><a href="tel:+2349160308124" class="text-white text-decoration-none">Contact Representative</a></li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="footer-tools">
+            <p style="font-size: 16px;">COPYRIGHT: ushengineering @2023</p>
+            <div class="d-flex align-items-center">
+              <img src="/images/Vector.png" alt="logo" class="logo pb-2">
+              <p style="color: gray;">Powered by ush</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="social-section d-flex gap-4 pt-4 mt-4 container">
-    <div class="d-flex gap-2"><img src="/images/square-twitter.svg" alt="" class="" width="20"><li class="list-unstyled">Twitter</li></div>
-    <div class="d-flex gap-2"><img src="/images/LinkedIn.png" alt="LinkedIn" class="img-fluid"><li class="list-unstyled">LinkedIn</li></div>
-    <a href="https://www.facebook.com/ushengineering" target="_blank" class="text-decoration-none text-white">
-      <div class="d-flex gap-2">
-        <img src="/images/fb.png" alt="" class="img-fluid">
-        <li class="list-unstyled">Facebook</li>
-      </div>
-    </a>
-  </div>
-</footer>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  </footer>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-    
-    <script>
-      const hamburger = document.querySelector('.hamburger');
-      const Navmenu = document.querySelector('.navmenu');
-  
-      hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('active');
-        Navmenu.classList.toggle('active');
-      });
-    document.querySelectorAll('navlink').forEach(n => n.addEventListener('click', ()=>{
-  
-        hamburger.classList.remove('active');
-        Navmenu.classList.remove('active');
-      }));
-
-
-    
-    </script>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
 </html>
