@@ -11,6 +11,64 @@
     <link rel="stylesheet" href="main.css">
     <title>Rapid Driller</title>  
 </head>
+<style>
+  .boxes{
+        height: 500px !important;
+        width: 310px !important;
+      }
+
+  @media(max-width:320px) {
+  .image-caption{
+    position: absolute;
+    top: 8% !important;
+    left: 50% !important;
+    translate: (-40%, -50%);
+  }
+  .image-caption button{
+    padding: 4px 10px !important;
+    margin: 0 !important;
+    font-size: 12px !important;
+  }
+  .boxes{
+    width: 250px !important;
+    height: auto !important;
+  }
+  } 
+
+  
+@media(max-width:768px) {
+  .image-caption h4{
+    font-size: 12px !important;
+  }
+  .schedule-section img{
+    width: 100%;
+  }
+  .image-caption{
+    position: absolute;
+    top: 16% !important;
+    left: 50% !important;
+    translate: (-40%, -50%);
+  }
+  .image-caption button{
+    padding: 4px 10px !important;
+    margin: 0 !important;
+    margin-bottom: 6px !important;
+    font-size: 12px !important;
+  }
+  .boxes{
+    width: 300px;
+    height: auto !important;
+  }
+  }
+  
+  @media (min-width: 776px) and (max-width:900px){
+        .boxes{
+          width: 250px !important;
+          height: 100% !important;
+          font-size: 14px !important;
+        }
+        }
+</style>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top pt-5">
       <div class="container-fluid">
@@ -268,8 +326,8 @@
   <div class="schedule-section pt-4 mt-4">
     <div class="pt-4 mt-4 schedule-section-img">
       <img src="/images/schedule.png" alt="shedudule-img" class="img-fluid schedule">
-      <div class="image-caption"><h4 style="font-size: 32px;" class="pb-4">Schedule your meeting with Rapid Driller representative to get started</h4>
-      <span class="pt-4"><button class="btn-primary rep-btn border-0 text-white">Speak to a representative</button></span>
+      <div class="image-caption"><h4 style="font-size: 32px;" class="pb-2">Schedule your meeting with Rapid Driller representative to get started</h4>
+      <span class=""><button class="btn-primary schedule-rep-btn border-0 text-white">Speak to a representative</button></span>
     </div>
   </div>
   </div>
@@ -278,7 +336,7 @@
   <footer class="footer-section pt-4 mt-4">
     <div class="container pt-4">
       <div class="row gap-lg-5 gap-md-4">
-        <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="col-lg-3 col-md-3 col-sm-6">
           <div class="footer-tools" style="font-size: 20px;">
             <h4><strong>All Tools</strong></h4>
             <ul class="list-unstyled">
@@ -290,19 +348,19 @@
           </div>
         </div>
   
-        <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="col-lg-3 col-md-3 col-sm-6">
           <div class="footer-tools" style="font-size: 20px;">
             <h4><strong>Links</strong></h4>
             <ul class="list-unstyled">
               <li><a href="http://home.ushmoney.net/" class="text-white text-decoration-none">Home</a></li>
-              <li><a href="#" class="text-white text-decoration-none">Pricing</a></li>
+              <li><a href="pricing.html" class="text-white text-decoration-none">Pricing</a></li>
               <li><a href="#" class="text-white text-decoration-none">Learning Center</a></li>
-              <li><a href="tel:+2349160308124" class="text-white text-decoration-none">Contact Representative</a></li>
+              <li><a href="repForm.html" class="text-white text-decoration-none">Contact Representative</a></li>
             </ul>
           </div>
         </div>
   
-        <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="col-lg-3 col-md-3 col-sm-6">
           <div class="footer-tools">
             <p style="font-size: 16px;">COPYRIGHT: ushengineering @2023</p>
             <div class="d-flex align-items-center">
