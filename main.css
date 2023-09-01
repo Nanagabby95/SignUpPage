@@ -102,7 +102,7 @@ text-transform: uppercase;
     border: none !important;
   }
   .navbar{
-    background: #0112224a !important;
+    background:#011B33 !important;
   }
 
   .nav-btn-wrapper .login{
@@ -233,13 +233,34 @@ text-transform: uppercase;
     background-color: #3A95C9 !important; 
     border: none !important;
   } 
-  .boxes{
+  /* .boxes{
         background: linear-gradient(154.84deg, rgba(255, 255, 255, 0.05) 5.49%, rgba(255, 255, 255, 0.0055) 100%);
         border-radius: 11px;
-        height: 550px !important;
+        height: 550px;
         border: 1px solid #FFFFFF;
-        width: 419px !important;
-       }
+        width: 419px;
+       } */
+
+       .boxes{
+        width: 350px !important;
+        height: 540px;
+        flex-shrink: 0;
+        color: #FFF;
+        border: 1px solid #FFFFFF;
+        background: linear-gradient(154.84deg, rgba(255, 255, 255, 0.05) 5.49%, rgba(255, 255, 255, 0.0055) 100%);
+        border-radius: 11px;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 190.3%; 
+      }
+      .boxes-wrapper{
+        display: inline-flex;
+        align-items: flex-start;
+        /* gap: 55px; */
+      }
       .boxes2{
         background: linear-gradient(154.84deg, rgba(255, 255, 255, 0.05) 5.49%, rgba(255, 255, 255, 0.0055) 100%);
         border-radius: 11px;
@@ -372,7 +393,7 @@ text-transform: uppercase;
       
       .image-caption {
         position: absolute;
-        bottom: 50%; 
+        bottom: 35%; 
         left: 50%; 
         transform: translate(-50%, 50%); 
         width: 100%; 
@@ -397,9 +418,7 @@ text-transform: uppercase;
         border-radius: 10px !important;
         font-size: 20px;
       }
-      .benefits-btn{
-        padding: 15px 50px !important;
-       }
+    
        .benefits-container{
         background-image: url(/images/benefitlay.png);
         background-repeat: no-repeat;
@@ -625,7 +644,6 @@ text-transform: uppercase;
           width: 15px !important;
         }
         .btn-outline-light{
-          margin-top: 10px !important;
           font-size: 20px;
         }
         .hero-section{
@@ -652,9 +670,55 @@ text-transform: uppercase;
         .schedule-rep-btn{
           padding: 20px 20px !important;
         }
-        .boxes2 p{
-          font-size: 14px !important;
+        
+        .schedule-section-img .schedule{
+          width: 100vw !important;
+          height:40vh !important;
         }
+        .logo{
+          width: 15px !important;
+        }
+       .benefits-container .benefits-btn{
+        padding:20px  50px !important;
+       }
+
+       /* .image-caption h4{
+        font-size: 16px !important;
+      } */
+      .schedule-section img{
+        display: none !important;
+      }
+      .schedule-section {
+      background-image: url(/images/schedule.png);
+      background-position: center;
+      background-size: cover !important;
+      height:  50vh;
+      overflow: hidden;
+      /* width: 70vw !important; */
+      margin: 0; 
+      padding: 0; 
+    }
+    
+    
+      .image-caption{
+       align-items: center;
+       padding: 0 5px;
+       padding-top: 400px;
+      }
+     
+      .boxes{
+        width: 280px;
+        height: auto;
+      }
+      .boxes-wrapper{
+        gap: 3em;
+      }
+      
+      .benefits-wrapper button{
+        width: 35%;
+      }
+      
+       
     }
     @media (max-width:776px) {
       p{
@@ -670,10 +734,11 @@ text-transform: uppercase;
       .nav-btn-wrapper{
       display: flex;
       flex-direction: column;
-      padding-left: 10px !important;
+      margin-right: 10px;
       }
+      
       .navbar{
-        background-color: #01162e !important;
+        background-color: #011B33 !important;
       }
 
       .navbar ul{
@@ -697,12 +762,34 @@ text-transform: uppercase;
       }
 
       .benefits-btn{
-        padding: 20px !important;
+        padding:  10px 30px !important;
+        font-size: 14px !important;
        }
        .schedule-section button{
         width: 10px 25px !important;
        }
       
+      
+  }
+    @media (max-width:820px) {
+      .buttons-wrapper button{
+        width: 50% !important;
+      }
+    .buttons-wrapper{
+      display: flex;
+      flex-direction: column;
+    }
+    .btn-div{
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      gap: 1em;
+    }
+    .btn-div button{
+      width: 100% !important;
+    }
+    
+   
   }
   @media (min-width: 820px) and (max-width: 912px) {
     .show-mobile{
@@ -718,7 +805,12 @@ text-transform: uppercase;
     }
     .navbar{
         background-color: #021933 !important;
+        
       }
+      .image-wrapper img{
+        display: none !important;
+      }
+   
   }
 
    @media (max-width:600px) {
@@ -726,10 +818,11 @@ text-transform: uppercase;
       padding: 5px 50px !important;
       font-size: 12px !important;
     } 
-    .image-caption {
-      position: relative;
-      width: 100%;
-    }
+    .image-caption{
+      align-items: center;
+      padding: 0 5px;
+      padding-top: 200px !important;
+     }
       .image-caption h4{
         font-size: 20px !important;
       } 
@@ -744,10 +837,6 @@ text-transform: uppercase;
       .logo{
         width: 15px !important;
       }
-      .boxes{
-        height: 400px !important;
-        width: 300px !important;
-      }
       .gradient-btn{
         width: 60% !important;
         font-size: 12px;
@@ -757,6 +846,14 @@ text-transform: uppercase;
         }
         .schedule-rep-btn{
           padding: 10px 20px !important;
+        }
+        .btn-div button{
+          width: 80% !important;
+        }
+        .btn-div{
+          display: flex;
+          flex-direction: column;
+          text-align: center;
         }
      
     } 
@@ -775,10 +872,19 @@ text-transform: uppercase;
         .schedule-rep-btn{
           padding: 10px 20px !important;
         }
+        .benefits-wrapper button{
+          width: 80%;
+        }
+        .btn-div button{
+          width: 40%;
+        }
+        .btn-div .btn-outline-light{
+          margin-top:0 !important;
+          padding: 10px 20px !important;
+        }
+      
     } 
-    
-  
-  @media (max-width:280px) {
+  @media (max-width:380px) {
     .footer-section{
       display: flex;
       flex-direction: column !important;
@@ -795,4 +901,17 @@ text-transform: uppercase;
     .schedule-rep-btn{
       padding: 10px 20px !important;
     }
-  }
+  
+     .benefits-wrapper button{
+        width: 90% !important;
+      }
+      .btn-div button{
+        width: 80% !important;
+      }
+      .btn-div{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+     
+  } 

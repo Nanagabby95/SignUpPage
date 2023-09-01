@@ -11,9 +11,24 @@
     <link rel="stylesheet" href="main.css">
     <title>Rapid Compiler</title> 
     <style>
+     
       .boxes{
-        height: 500px !important;
-        width: 310px !important;
+        width: 340px !important;
+        height: 540px;
+        flex-shrink: 0;
+        color: #FFF;
+        border: 1px solid #FFFFFF;
+        background: linear-gradient(154.84deg, rgba(255, 255, 255, 0.05) 5.49%, rgba(255, 255, 255, 0.0055) 100%);
+        border-radius: 11px;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 190.3%; 
+      }
+      .boxes-wrapper{
+        gap: 8em;
       }
        @media(min-width:920px){
         body{
@@ -23,8 +38,12 @@
       }
         @media (min-width: 776px) and (max-width:900px){
         .boxes{
-          width: 250px !important;
+          width: 250px ;
           height: 100% !important;
+        }
+        .btn-div .btn-outline-light{
+          margin-bottom:0 !important;
+          padding: 10px 20px !important;
         }
         }
       @media(max-width:600px){
@@ -51,52 +70,52 @@
         .compiler-btn, .btn-outline-light {
           width: 100%;
         }
-        .boxes{
-          width: 300px !important;
-          height: auto !important;
-        }
       
       }
- @media(max-width:320px) {
-  .image-caption{
-    position: absolute;
-    top: 8% !important;
-    left: 50% !important;
-    translate: (-40%, -50%);
-  }
-  .image-caption button{
-    padding: 4px 10px !important;
-    margin: 0 !important;
-    font-size: 12px !important;
-  }
-  .boxes{
-    width: 250px !important;
-    height: auto !important;
-  }
+      @media(max-width:380px) {
+        .boxes{
+          width: 250px ;
+          height: auto !important;
+        }
   } 
-@media(max-width:768px) {
-  .image-caption h4{
-    font-size: 12px !important;
-  }
-  .schedule-section img{
-    width: 100%;
-  }
-  .image-caption{
-    position: absolute;
-    top: 16% !important;
-    left: 50% !important;
-    translate: (-40%, -50%);
-  }
+      @media(max-width:280px) {
+        .boxes{
+          width: 250px !important;
+          height: auto !important;
+        }
+  } 
+    @media(max-width:768px) {
+      .image-caption h4{
+        font-size: 16px !important;
+      }
+      .schedule-section img{
+        width: 100%;
+      }
+
   .image-caption button{
-    padding: 4px 10px !important;
     margin: 0 !important;
     margin-bottom: 6px !important;
-    font-size: 12px !important;
+    font-size: 14px !important;
   }
   .boxes{
     width: 300px;
     height: auto !important;
   }
+  .boxes-wrapper{
+      gap: 8em;
+    }
+  }
+  @media (max-width:912px) {
+    .boxes{
+        width: 350px ;
+        /* height: auto !important; */
+      }
+    .boxes-wrapper{
+      gap: 12em;
+    }
+    .image-wrapper img{
+        display: none !important;
+      }
   }
     </style> 
 </head>
@@ -269,7 +288,7 @@
     <h3 class="gradient2 pt-2 text-center pb-4 mb-4">HEAR FROM SCHOOLS THAT HAVE DONE IT</h3>
   </div>
   <div class="carous-wrapper pt-4 pb-4">
-  <div id="demo" class="carousel slide container-fluid pt-4 pb-4" data-bs-ride="carousel">
+  <div id="demo" class="carousel slide container pt-4 pb-4" data-bs-ride="carousel">
     <!-- The slideshow/carousel -->
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -322,22 +341,22 @@
   <div class="pt-4">
     <div class="pt-4">
       <h3 class="gradient2 pt-4 text-center pb-4">HOW TO GET STARTED WITH RAPID COMPILER</h3>
-      <div class="row gap-5 text-center">
-        <div class="col-md-6 col-lg-3 pb-4 mt-4">
+      <div class="row boxes-wrapper">
+        <div class="col-md-3 col-lg-3 col-sm-6 pb-4 mt-4">
           <div class="boxes pt-4 pb-4 mt-4">
             <img src="/images/construction.png" alt="construction-icon" class="pt-4">
             <h5 class="problems-wrapper-heading pt-4 pb-4" style="font-size: 24px!important; font-weight: bold;">Talk to a representative</h5>
             <p class="p-4" style="font-size: 16px !important;">Start by speaking to a RAPID COMPILER representative who will listen to your school's unique needs and provide you with information about how the software can help you. They will also answer any questions you may have about the product.</p>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3 pb-4 mt-4">
+        <div class="col-md-3 col-lg-3 col-sm-6 pb-4 mt-4">
           <div class="boxes pt-4 pb-4 mt-4">
             <img src="/images/school.png" alt="school-icon" class="pt-4">
             <h5 class="school-heading pt-4 pb-4"  style="font-size: 24px !important; font-weight: bold;">Setup your School</h5>
             <p class="p-4" style="font-size: 16px !important;">Once you've decided to use RAPID COMPILER, a team of experts will help you set up your school and customize the software to your specific needs. They will provide ongoing support and training to ensure that your school is getting the most out of the product.</p>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3 pb-4 mt-4">
+        <div class="col-md-3 col-lg-3  col-sm-6 pb-4 mt-4">
           <div class="boxes pt-4 pb-4 mt-4">
             <img src="/images/bar_chart.png" alt="bar-icon" class="pt-4">
             <h5 class="bar-heading pt-4 pb-4"  style="font-size: 24px!important; font-weight: bold;">Get Results</h5>
@@ -349,7 +368,7 @@
     <div class="benefits-wrapper pt-4">
       <div class="pt-4">
         <h2 class="gradient2 text-center pb-4">Start enjoying the benefits of  RAPID COMPILER today!</h2>
-        <div class="buttons-wrapper text-center justify-content-between pt-4">
+        <div class="btn-div text-center pt-4">
           <a href="tel:+2349160308124"><button class="btn compiler-btn text-white border-0 mx-2">Talk to an advisor</button></a>
           <a href="pricing.html"><button class="btn btn-outline-light mx-2 text-white" style="background-color: transparent;" submit>See pricing</button></a>
         </div>
@@ -364,23 +383,24 @@
         </div>
       </div>
     </div>
-    <div class="schedule-section pt-4 mt-4">
+    <div class="schedule-section pt-4 mt-4 container-fluid">
       <div class="pt-4 mt-4 schedule-section-img">
         <img src="/images/schedule.png" alt="shedudule-img" class="img-fluid schedule">
         <div class="image-caption"><h4 style="font-size: 32px;" class="pb-4">Schedule your meeting with Rapid suite representative to get started</h4>
         <span class=""><a href="tel:+2349160308124"><button class="btn-primary schedule-rep-btn  border-0 text-white">Speak to a representative</button></a></span>
       </div>
     </div>
+</div>
     <div class="pt-4 mt-4"><hr style="color: #1393ECAD;"></div>
 
     <footer class="footer-section pt-4 mt-4">
       <div class="container pt-4">
         <div class="row gap-lg-5 gap-md-4">
-          <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="col-lg-3 col-md-3 col-sm-6">
             <div class="footer-tools" style="font-size: 20px;">
               <h4><strong>All Tools</strong></h4>
               <ul class="list-unstyled">
-                <li><a href="#" class="text-white text-decoration-none">Paymoff</a></li>
+                <li><a href="paymoff.html" class="text-white text-decoration-none">Paymoff</a></li>
                 <li><a href="web.html" class="text-white text-decoration-none">Rapid web</a></li>
                 <li><a href="diller.html" class="text-white text-decoration-none">Rapid driller</a></li>
                 <li><a href="compiler.html" class="text-white text-decoration-none">Rapid compiler</a></li>
@@ -388,7 +408,7 @@
             </div>
           </div>
     
-          <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="col-lg-3 col-md-3 col-sm-6">
             <div class="footer-tools" style="font-size: 20px;">
               <h4><strong>Links</strong></h4>
               <ul class="list-unstyled">
@@ -400,7 +420,7 @@
             </div>
           </div>
     
-          <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="col-lg-3 col-md-3 col-sm-6">
             <div class="footer-tools">
               <p style="font-size: 16px;">COPYRIGHT: ushengineering @2023</p>
               <div class="d-flex align-items-center">
